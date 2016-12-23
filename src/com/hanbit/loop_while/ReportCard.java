@@ -2,6 +2,12 @@ package com.hanbit.loop_while;
 
 import java.util.Scanner;
 
+/**
+@FILE  : ReportCard.java
+@DATE  : 2016. 12. 23.
+@AUTHOR: HAYUN KIM
+@STORY :
+ */
 public class ReportCard {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
