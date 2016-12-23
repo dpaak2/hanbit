@@ -27,7 +27,7 @@ public class ShowMonth {
 			date = 30;
 			break;
 		case 2:
-			if(year%4!=date && year%400!=date){
+			if(year%4!=0 && year%400!=0){
 					System.out.println("평년입니다.");
 			}else{
 					System.out.println("윤년입니다.");
