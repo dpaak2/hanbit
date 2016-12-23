@@ -27,15 +27,17 @@ public class ShowMonth {
 			date = 30;
 			break;
 		case 2:
-			if(year%4!=0 && year%400!=0){
-					System.out.println("평년입니다.");
-			}else{
-					System.out.println("윤년입니다.");
-			}
+		if(year%4==0 && year%100!=0){
+			date=29;
+		}else if(year%4==0 && year%100==0 && year%400==0){
+			date=29;
+		}else{
+			date=28;
+		}
 		break;
 			default : System.out.println("Wrong Month!");
 			return;
 		}
-		System.out.println(year + "년" + month + "월은" + date + "일까지입니다.");
+		System.out.println(year + "-" + month + "-" + date);
 	}
 }
