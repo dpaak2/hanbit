@@ -6,12 +6,12 @@ public class Calculator {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("=== Calculator ===");
-		System.out.println("First number : ");
+		System.out.printf("%s","=== Calculator ===\n");
+		System.out.printf("%s","First number :\n");
 		int fno = scanner.nextInt();
-		System.out.println("Opcode :");
+		System.out.printf("%s","Opcode :\n");
 		String opcode = scanner.next();
-		System.out.println("Second Number:");
+		System.out.printf("%s","Second Number:\n");
 		int sno = scanner.nextInt();
 		int result = 0;
 		switch (opcode) {
@@ -31,10 +31,10 @@ public class Calculator {
 			result= fno %sno;
 			break;
 		default :
-			System.out.println("ERROR");
+			System.out.printf("%s","ERROR!\n");
 			return;
 		}
-		System.out.println("Result :" + result);
+		System.out.printf("%s%d","Result :" ,result);
 	}
 
 }

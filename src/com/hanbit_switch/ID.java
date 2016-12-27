@@ -12,21 +12,23 @@ public class ID {
 		ssn = s.next();
 		char ch = ssn.charAt(7);
 		switch (ch) {
-		case '1': case'3':
+		case '1':
+		case '3':
 			gender = "남자";
 			break;
-		case '2':	case'4':
-			gender ="여자";
+		case '2':
+		case '4':
+			gender = "여자";
 			break;
-		case'5': case'6':
-			gender="외국인";
+		case '5':
+		case '6':
+			gender = "외국인";
 			break;
 		default:
-			System.out.println("다시입력하세요.");
+			System.out.printf("%s", "다시입력하세요.");
 			return;
 		}
-		System.out.println("Gender: " + gender);
-
+		System.out.printf("%s%s", "Gender:\n", gender);
 	}
 
 }
