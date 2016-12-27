@@ -1,4 +1,4 @@
-package com.hanbit.loop_for;
+package com.hanbit.series;
 
 /**
  * @FILE : Fibonacci.java

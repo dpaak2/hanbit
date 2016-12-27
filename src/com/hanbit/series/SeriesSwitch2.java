@@ -1,6 +1,6 @@
-package com.hanbit.loop_while;
+package com.hanbit.series;
 
-public class SeriesSwitch {
+public class SeriesSwitch2 {
 	public static void main(String[]args){
 		int i =0,sum =0,sw =0;		
 		
