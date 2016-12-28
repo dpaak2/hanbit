@@ -17,6 +17,7 @@ public class LottoDraw {
 			int target = (int) (Math.random()*45+1);
 				switch (count){
 				case  1:
+					
 				System.out.println("Ball 1: "+target);
 				break;
 				case 2:
