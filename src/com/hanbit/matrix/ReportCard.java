@@ -20,10 +20,13 @@ public class ReportCard {
 		for(i=0;i<arr.length;i++){
 			arr[i] = s.nextInt();
 			total += arr[i];
+			if(arr[i]>100){
+				System.out.println("다시 입력하세요");
+			}else{
+			total += arr[i];}
 		}
 		average = (total) / arr.length;
 		System.out.printf("Average:%d\n",average);
-		
 		char grade = '0';
 		if (average >= 90) {
 			grade = 'A';
@@ -37,10 +40,10 @@ public class ReportCard {
 			grade = 'F';
 		}
 		System.out.printf(
-		"========================================\n"+
-		" 이름     국어   영어 수학 사회 과학 평균 학점\n"+
+		"===========================================\n"+
+		" 이름  국어  영어  수학 사회 과학 평균 학점\n"+
 		"-------------------------------------------\n"+
-		"%s     %d     %d    %d  %d   %d   %d %c \n" +
+		"%s     %d     %d    %d   %d   %d  %d %c \n" +
 		"========================================="
 		,name,arr[0],arr[1],arr[2],arr[3],arr[4],average,grade);
 	}
