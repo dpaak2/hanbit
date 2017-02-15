@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 출력음 [5,23,23,40,19,22]
  */
 public class LottoDraw2 {
-	public static void main(String[] args) {
+	public void lottoDraw() {
 		int lottoNum = 0, count=0;
 		int ball1=0,ball2=0,ball3=0,ball4=0,ball5=0,ball6=0;
 		//System.out.println(lottoNum);

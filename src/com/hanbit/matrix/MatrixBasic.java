@@ -6,10 +6,7 @@ public class MatrixBasic {
 		for(int i=0;i<mtx.length;i++){
 			for(int j=0;j<mtx[i].length;j++){
 				System.out.printf("[%d,%d]",i,j);
-			}
-			System.out.println("");
-		}
-		
+			}System.out.println("");
+		}		
 	}
-
 }

@@ -14,14 +14,22 @@ public class Gugudan {
 		int[][]mtx=new int[10][10];
 		for(int i=1;i<mtx.length;i++){
 			System.out.println("");
-			for(int j=2;j<mtx[i].length;j++){
+			for(int j=2;j<6;j++){
 				k=j*i;
+			
+				System.out.printf("%dx%d=%d\t",j,i,k);
+				}
+			}
+		System.out.println("");
+		for(int i=1;i<mtx.length;i++){
+			System.out.println("");
 			for(int j=6;j<mtx[i].length;j++){
 				k=j*i;
-			}
+			
 				System.out.printf("%dx%d=%d\t",j,i,k);
 				}
 			}
 		}
-	}
+		}
+	
 
